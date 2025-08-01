@@ -10,7 +10,7 @@ def validar():
 
     if len(nombre) > 3:
         # Llamada al servicio de notificación (reemplaza con tu URL real)
-        url_notificacion = "https://servicio-notificacion-1.onrender.com/notificar"
+        url_notificacion = "https://servicio-notificacion-cb7u.onrender.com/notificar"
         try:
             requests.post(url_notificacion, json={"nombre": nombre})
         except Exception as e:
@@ -21,3 +21,4 @@ def validar():
         return jsonify({"estado_validacion": "invalido"})
 
 # No uses app.run() porque lo ejecutará gunicorn
+
